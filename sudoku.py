@@ -28,6 +28,8 @@ def generate_sudoku(mask_rate=0.5):
 
 
 def solve(m):
+    if isinstance(m, list):
+        m = np.array(m)
     rg = np.arange(m.shape[0]+1)
     while True:
         mt = m.copy()
@@ -59,6 +61,8 @@ def solve(m):
 
 
 def check_result(m):
+    if isinstance(m, list):
+        m = np.array(m)
     set_rg = set(np.arange(1, m.shape[0] + 1))
     no_good = False
     for i in range(m.shape[0]):
@@ -77,6 +81,17 @@ def check_result(m):
         print("\nChecked: OK")
 
 
-puzzle = generate_sudoku(mask_rate=0.7)
-solved = solve(puzzle)
-check_result(solved)
+if __name__ == "__main__":
+    puzzle = generate_sudoku(mask_rate=0.7)
+    solved = solve(puzzle)
+    check_result(solved)
+
+    solve([[8, 2, 6, 1, 9, 7, 4, 3, 5],
+         [5, 9, 7, 6, 3, 4, 1, 8, 2],
+         [4, 3, 1, 8, 2, 5, 9, 7, 6],
+         [7, 8, 3, 4, 5, 6, 2, 1, 9],
+         [9, 5, 2, 3, 7, 1, 0, 0, 0],
+         [6, 1, 4, 9, 8, 2, 7, 5, 3],
+         [3, 4, 9, 7, 6, 8, 5, 2, 1],
+         [2, 7, 8, 5, 1, 0, 0, 0, 0],
+         [1, 6, 5, 2, 4, 0, 0, 0, 0]])
