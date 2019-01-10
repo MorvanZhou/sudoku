@@ -41,6 +41,6 @@ solved = solve(puzzle)
 If you have your own solution, you can validate it by following function:
 
 ```python
-check_result(your_puzzle)
+check_solution(your_puzzle)
 # Checked: OK
 ```

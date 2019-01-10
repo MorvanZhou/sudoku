@@ -60,7 +60,7 @@ def solve(m):
     return mt
 
 
-def check_result(m):
+def check_solution(m):
     if isinstance(m, list):
         m = np.array(m)
     set_rg = set(np.arange(1, m.shape[0] + 1))
@@ -84,7 +84,7 @@ def check_result(m):
 if __name__ == "__main__":
     puzzle = generate_sudoku(mask_rate=0.7)
     solved = solve(puzzle)
-    check_result(solved)
+    check_solution(solved)
 
     solve([[8, 2, 6, 1, 9, 7, 4, 3, 5],
          [5, 9, 7, 6, 3, 4, 1, 8, 2],
