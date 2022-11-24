@@ -50,7 +50,7 @@ import sudokum
 sudokum.display_wfc(human=True)
 ```
 
-![human](https://github.com/MorvanZhou/sudoku/raw/main/demo/sudoku_auto.gif)
+![human](https://github.com/MorvanZhou/sudoku/raw/main/demo/sudoku_human.gif)
 
 # Solving
 
