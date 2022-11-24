@@ -1,5 +1,5 @@
-import random
 import copy
+import random
 
 from msudoku.method.types import ListGrid
 

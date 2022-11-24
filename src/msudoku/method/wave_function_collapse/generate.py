@@ -1,13 +1,13 @@
-import typing as tp
-import random
 import logging
+import random
+import typing as tp
 
+from msudoku import checker
+from msudoku.method.mask import mask
+from msudoku.method.types import ListGrid
 from msudoku.method.wave_function_collapse.cell import Cell
 from msudoku.method.wave_function_collapse.grid import Grid
 from msudoku.method.wave_function_collapse.pq import PriorityQueue
-from msudoku.method.types import ListGrid
-from msudoku.method.mask import mask
-from msudoku import checker
 
 
 def generate(mask_rate=0) -> ListGrid:

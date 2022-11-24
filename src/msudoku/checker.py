@@ -25,8 +25,8 @@ def check(solution: tp.List[tp.List[int]]) -> tp.Tuple[bool, tp.List[tp.Tuple[in
                 pos = [(solution_list.index(d), c) for d in dup]
                 return False, pos
 
-    for r in range(0, 9, 9//3):
-        for c in range(0, 9, 9//3):
+    for r in range(0, 9, 9 // 3):
+        for c in range(0, 9, 9 // 3):
             solution_list = []
             dup = []
             for i in range(9):

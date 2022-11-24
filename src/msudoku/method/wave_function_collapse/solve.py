@@ -1,11 +1,11 @@
-import typing as tp
 import random
+import typing as tp
 
+from msudoku import checker
 from msudoku.method.types import ListGrid
+from msudoku.method.wave_function_collapse.generate import wave_function_collapse, propagate
 from msudoku.method.wave_function_collapse.grid import Grid
 from msudoku.method.wave_function_collapse.pq import PriorityQueue
-from msudoku.method.wave_function_collapse.generate import wave_function_collapse, propagate
-from msudoku import checker
 
 
 def solve(grid: ListGrid, max_try: int = 10) -> tp.Tuple[bool, ListGrid]:

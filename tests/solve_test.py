@@ -15,7 +15,7 @@ class SolveTest(unittest.TestCase):
         for _ in range(5):
             method = "wfc"
             g = msudoku.generate(mask_rate=0.95, method=method)
-            ok, s = msudoku.solve(g, max_try=6, method=method)
+            ok, s = msudoku.solve(g, max_try=10, method=method)
             self.assertTrue(ok, msg=s)
             self.assertTrue(msudoku.check(s))
 
