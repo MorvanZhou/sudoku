@@ -52,7 +52,7 @@ sudokum.display_wfc(human=True)
 
 # Solving
 
-By using `solver()` function, it tries to solve the puzzle.
+By using `sudokum.solve()` function, it tries to solve the puzzle.
 
 ```python
 import sudokum
@@ -73,7 +73,7 @@ print(s)
 """
 ```
 
-A solving max try number can set as following:
+A solving max try number (default to 10) can set as following:
 
 ```python
 import sudokum
