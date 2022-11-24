@@ -30,7 +30,7 @@ print(g)
 """
 ```
 
-To visualize the generating procedure, I have made a GUI for animate Wave Function Collapse in sudoku generation.
+To visualize the generating procedure, I have made a GUI for animating Wave Function Collapse in sudoku generation.
 
 ```python
 import sudokum
