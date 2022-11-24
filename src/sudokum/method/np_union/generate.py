@@ -9,8 +9,8 @@ except ModuleNotFoundError:
     print("Dependency not found, try installing numpy>=1.19.5")
     subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy>=1.19.5"])
 
-from msudoku.method.mask import mask
-from msudoku.method.types import ListGrid
+from sudokum.method.mask import mask
+from sudokum.method.types import ListGrid
 
 
 def generate(mask_rate=0.5) -> ListGrid:

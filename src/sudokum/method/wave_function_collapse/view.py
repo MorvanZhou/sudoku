@@ -1,8 +1,8 @@
 import time
 import tkinter as tk
 
-from msudoku.checker import check
-from msudoku.method.wave_function_collapse.generate import propagate, pop_cell, reset
+from sudokum.checker import check
+from sudokum.method.wave_function_collapse.generate import propagate, pop_cell, reset
 
 
 class Generation(tk.Tk):

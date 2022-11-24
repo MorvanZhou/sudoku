@@ -1,7 +1,7 @@
 import copy
 import random
 
-from msudoku.method.types import ListGrid
+from sudokum.method.types import ListGrid
 
 
 def mask(grid: ListGrid, rate: float = 0.5) -> ListGrid:

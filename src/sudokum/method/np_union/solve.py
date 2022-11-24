@@ -9,7 +9,7 @@ except ModuleNotFoundError:
     print("Dependency not found, try installing numpy>=1.19.5")
     subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy>=1.19.5"])
 
-from msudoku.method.types import ListGrid
+from sudokum.method.types import ListGrid
 
 
 def solve(grid: ListGrid, max_try: int = 10) -> tp.Tuple[bool, ListGrid]:

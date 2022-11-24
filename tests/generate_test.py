@@ -1,16 +1,16 @@
 import unittest
 
-import msudoku
+import sudokum
 
 
 class GenerateTest(unittest.TestCase):
     def test_wfc(self):
         for _ in range(20):
-            m = msudoku.generate(method="wfc")
-            ok, err_pos = msudoku.check(m)
+            m = sudokum.generate(method="wfc")
+            ok, err_pos = sudokum.check(m)
             self.assertTrue(ok, msg=f"{err_pos}")
 
     def test_np_union(self):
-        m = msudoku.generate(method="np_union")
-        ok, err_pos = msudoku.check(m)
+        m = sudokum.generate(method="np_union")
+        ok, err_pos = sudokum.check(m)
         self.assertTrue(ok, msg=f"{err_pos}")

@@ -1,4 +1,3 @@
-import msudoku
+import sudokum
 
-
-msudoku.display_wfc(human=True)
+sudokum.display_wfc(human=True)

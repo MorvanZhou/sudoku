@@ -1,9 +1,9 @@
 import typing as tp
 
-import msudoku.method.wave_function_collapse as wfc
-from msudoku.checker import check
-from msudoku.method import np_union
-from msudoku.method.types import ListGrid
+import sudokum.method.wave_function_collapse as wfc
+from sudokum.checker import check
+from sudokum.method import np_union
+from sudokum.method.types import ListGrid
 
 _MAP = {
     "wfc": (wfc.generate, wfc.solve),

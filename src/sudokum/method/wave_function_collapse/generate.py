@@ -2,12 +2,12 @@ import logging
 import random
 import typing as tp
 
-from msudoku import checker
-from msudoku.method.mask import mask
-from msudoku.method.types import ListGrid
-from msudoku.method.wave_function_collapse.cell import Cell
-from msudoku.method.wave_function_collapse.grid import Grid
-from msudoku.method.wave_function_collapse.pq import PriorityQueue
+from sudokum import checker
+from sudokum.method.mask import mask
+from sudokum.method.types import ListGrid
+from sudokum.method.wave_function_collapse.cell import Cell
+from sudokum.method.wave_function_collapse.grid import Grid
+from sudokum.method.wave_function_collapse.pq import PriorityQueue
 
 
 def generate(mask_rate=0) -> ListGrid:

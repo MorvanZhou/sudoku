@@ -1,6 +1,6 @@
 import unittest
 
-from msudoku.method.mask import mask
+from sudokum.method.mask import mask
 
 
 class MaskTest(unittest.TestCase):

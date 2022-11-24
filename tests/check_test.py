@@ -1,6 +1,6 @@
 import unittest
 
-import msudoku
+import sudokum
 
 
 class CheckTest(unittest.TestCase):
@@ -14,7 +14,7 @@ class CheckTest(unittest.TestCase):
              [3, 5, 1, 4, 7, 6, 2, 8, 9],
              [7, 4, 2, 8, 1, 9, 3, 6, 5],
              [8, 6, 9, 2, 5, 3, 1, 4, 7]]
-        self.assertTrue(msudoku.check(s)[0])
+        self.assertTrue(sudokum.check(s)[0])
 
     def test_false_row(self):
         s = [[1, 2, 8, 5, 4, 7, 6, 9, 3],
@@ -26,7 +26,7 @@ class CheckTest(unittest.TestCase):
              [3, 5, 1, 4, 7, 6, 2, 8, 9],
              [7, 4, 2, 8, 1, 9, 3, 6, 5],
              [8, 6, 9, 2, 5, 3, 1, 4, 7]]
-        self.assertFalse(msudoku.check(s)[0])
+        self.assertFalse(sudokum.check(s)[0])
 
     def test_false_col(self):
         s = [[1, 2, 8, 5, 4, 7, 6, 9, 3],
@@ -38,7 +38,7 @@ class CheckTest(unittest.TestCase):
              [3, 5, 1, 4, 7, 6, 2, 8, 9],
              [7, 4, 2, 8, 1, 9, 3, 6, 5],
              [8, 6, 9, 2, 5, 3, 1, 4, 7]]
-        self.assertFalse(msudoku.check(s)[0])
+        self.assertFalse(sudokum.check(s)[0])
 
     def test_false_sub(self):
         s = [[1, 2, 8, 5, 4, 7, 6, 9, 3],
@@ -50,4 +50,4 @@ class CheckTest(unittest.TestCase):
              [3, 5, 1, 4, 7, 6, 2, 8, 9],
              [7, 4, 2, 8, 1, 9, 3, 6, 5],
              [8, 6, 9, 2, 5, 3, 1, 4, 7]]
-        self.assertFalse(msudoku.check(s)[0])
+        self.assertFalse(sudokum.check(s)[0])

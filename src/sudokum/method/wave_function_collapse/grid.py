@@ -1,6 +1,6 @@
 import typing as tp
 
-from msudoku.method.wave_function_collapse.cell import Cell
+from sudokum.method.wave_function_collapse.cell import Cell
 
 
 class Grid:
