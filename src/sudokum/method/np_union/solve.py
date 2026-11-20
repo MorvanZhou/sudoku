@@ -46,4 +46,4 @@ def solve(grid: ListGrid, max_try: int = 10) -> tp.Tuple[bool, ListGrid]:
         if count >= max_try:
             ok = False
             break
-    return ok, mt
+    return ok, mt.tolist()
