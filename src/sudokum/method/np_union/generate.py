@@ -30,7 +30,7 @@ def generate(mask_rate=0.5) -> ListGrid:
                     avb2 = np.setdiff1d(np.arange(0, n + 1),
                                         g[sub_r * 3:(sub_r + 1) * 3, sub_c * 3:(sub_c + 1) * 3].ravel())
                     avb = np.intersect1d(avb1, avb2)
-                    g[r, c] = np.random.choice(avb, size=1)
+                    g[r, c] = np.random.choice(avb)
             break
         except ValueError:
             attempt += 1
